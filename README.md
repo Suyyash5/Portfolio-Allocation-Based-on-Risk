@@ -6,7 +6,6 @@ The allocation strategy is driven by **Sharpe Ratio**, which balances return and
 
 The goal of this project is to provide a **simple, data-driven approach** to portfolio allocation without introducing unnecessary complexity.
 
----
 
 ## Problem Statement
 Investors often struggle to decide:
@@ -18,7 +17,7 @@ This project solves that by:
 - Measuring **return** from historical stock data  
 - Using **Sharpe Ratio** to determine optimal weightage  
 
----
+
 
 ## Dataset
 - **Number of Companies:** 46  
@@ -29,21 +28,21 @@ This project solves that by:
   - Low
   - Close  
 
----
+
 
 ## ⚙️ Methodology
 
 ### 1. Return Calculation
 Returns are calculated using closing prices:
-Return = (P_t - P_{t-1}) / P_{t-1}
+Return= Pt - Pt−1 / Pt-1
 
----
+
 
 ### 2. Risk Calculation
 Risk is measured using **standard deviation of returns**:
 Risk = σ (Returns)
 
----
+
 
 ### 3. Sharpe Ratio
 The Sharpe Ratio is used to evaluate risk-adjusted returns:
@@ -51,13 +50,13 @@ Sharpe Ratio = (Return - R_f) / σ
 
 *(Assuming risk-free rate R_f ≈ 0 for simplicity)*
 
----
+
 
 ### 4. Weight Allocation
 - Stocks with higher Sharpe Ratio get higher weight  
 - Weights are normalized so total allocation = 100%  
 
----
+
 
 ## Project Workflow
 1. Load stock dataset  
@@ -68,7 +67,7 @@ Sharpe Ratio = (Return - R_f) / σ
 6. Assign weights accordingly  
 7. Generate portfolio allocation  
 
----
+
 
 ## Key Features
 - Risk-based portfolio allocation  
@@ -76,14 +75,14 @@ Sharpe Ratio = (Return - R_f) / σ
 - Uses historical data for decision-making  
 - No overfitting or unnecessary ML complexity  
 
----
+
 
 ## Use Case
 - Beginner investors looking for structured allocation  
 - Educational understanding of portfolio optimization  
 - Base model for advanced quantitative finance projects  
 
----
+
 
 ## Limitations
 - Does not consider:
@@ -93,7 +92,6 @@ Sharpe Ratio = (Return - R_f) / σ
 
 - Based only on historical data  
 
----
 
 ## Future Improvements (Optional)
 - Add correlation-based portfolio optimization (Markowitz)  
@@ -101,7 +99,7 @@ Sharpe Ratio = (Return - R_f) / σ
 - Incorporate user-defined risk appetite  
 - Add clustering for stock grouping  
 
----
+
 
 ## Tech Stack
 - Python  
