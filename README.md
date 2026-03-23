@@ -30,7 +30,7 @@ This project solves that by:
 
 
 
-## ⚙️ Methodology
+## Methodology
 
 ### 1. Return Calculation
 Returns are calculated using closing prices:
